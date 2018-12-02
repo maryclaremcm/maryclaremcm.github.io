@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sandra's Next Generation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Sandra's Next Generation</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">Oral History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">The Hill</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-white d-flex">
+
+      <!--video feature-->
+      <!--https://www.w3schools.com/html/html5_video.asp-->
+      <video style="width:100%; z-indez: -1;" autoplay loop muted>
+        <source src="img/sandras/fried.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+
+
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="text-uppercase">
+              <strong>Sandra's Next Generation</strong>
+            </h1>
+            <hr>
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-5">Add something pithy about why Sandra's is so great</p>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Hear from Sandra</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">Oral History</h2>
+            <hr class="light my-4">
+            <p class="text-faded mb-4">Learn about the history of Sandra's Next Generation from Sandra herself. You'll hear about the history of the restaurant, how Sandra learned to cook, and get to watch her prepare her famous fried chicken.</p>
+            <hr class="light my-4">
+            <video style="width: 90%;" controls>
+              <source src="img/sandras/sandras_interview.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Explore The Hill</h2>
+            <hr class="my-4">
+            <p class="mb-2">Take a virtual walking tour of The Hill using Google Maps Street View.</p>
+            <p class="mb-2">Start at Sandra's Next Generation, which is marked with the red marker.</p>
+            <p class="mb-2">Click and drag the yellow icon to begin.</p>
+            <hr class="light my-4">
+          </div>
+        </div>
+      </div>
+     <!--Google Maps feature-->
+     <!--Credit to https://www.w3schools.com/graphics/google_maps_intro.asp-->
+      <div id="googleMap" style="width:100%;height:70vh;"></div>
+        <script>
+          function myMap() {
+              var sandras= {lat: 41.300010, lng: -72.939500};
+              var mapProp= {
+                  zoom: 15,
+                  center: new google.maps.LatLng(41.296936, -72.936136),
+              };
+              var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+              var marker = new google.maps.Marker({position: sandras, map: map})
+          }
+         </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOzO0DVDH74YrX2WYy3xcW-MiAXn9VYQA&callback=myMap"></script>
+    </section>
+
+
+
+    <section id="portfolio">
+      <section class="bg-dark text-white">
+        <div class="container text-center">
+
+          <h2 class="mb-4">Check Out Recipes from Sandra's Next Generation</h2>
+          <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Mac n Cheese</a>
+          <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Fried Chicken</a>
+        </div>
+      </section>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Contact Sandra's Next Generation</h2>
+            <hr class="my-4">
+            <p class="mb-5">Pithy statement saying why Sandra's is so cool</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fas fa-phone fa-3x mb-3 sr-contact-1"></i>
+            <p>203-787-4123</p>
+          </div>
+          <div class="col-lg-4 mr-auto text-center">
+            <i class="fas fa-laptop fa-3x mb-3 sr-contact-2"></i>
+            <p>
+              <a href="https://www.sandrasnextgeneration.com">Website</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
+  </body>
+
+</html>
