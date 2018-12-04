@@ -31,6 +31,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
+        <!--Links to Deep Roots home page index.html-->
         <a class="navbar-brand" href="index.html">DEEP ROOTS</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -55,13 +56,13 @@
     </nav>
 
     <header class="masthead text-center text-white d-flex">
-      <!--video feature-->
+      <!--video feature in header-->
       <!--https://www.w3schools.com/html/html5_video.asp-->
       <video style="position: absolute; width:100%; z-index: -1;" autoplay loop muted>
         <source src="img/sanctuary/olive_oil_short.mp4" type="video/mp4">
       Your browser does not support the video tag.
       </video>
-
+      <!--Text over the video-->
       <!--I learned how to overlay text over video through this Stack Overflow thread: https://stackoverflow.com/questions/10422105/add-text-above-html5-video-->
       <div class="container my-auto" style="position: relative; z-index: 1;">
         <div class="row">
@@ -72,7 +73,7 @@
           </div>
           <div class="col-lg-8 mx-auto">
             <p class="text-faded mb-5">Add something pithy about why Sanctuary Kitchen is so great</p>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Hear from ____ </a>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Hear from Mona </a>
           </div>
         </div>
       </div>
@@ -84,10 +85,12 @@
           <div class="col-lg-8 mx-auto text-center">
             <h2 class="section-heading text-white">Oral History</h2>
             <hr class="light my-4">
-            <p class="text-faded mb-4">Learn about the history of Sanctuary Kitchen from __ . You'll hear about ... </p>
+            <p class="text-faded mb-4">At Sanctuary Kitchen, refugee and asylum seekers resettled in Connecticut are invited to step into the heart of the bustling New Haven food scene, sharing their culinary expertise as staff chefs. Located on Grand Avenue, the program hosts cooking demonstrations, hands-on cooking classes, supper club meals, catering and other culinary events. All food is prepared by Sanctuary Kitchen’s cooks who come from a variety of countries including Mexico, The Dominican Republic, Afghanistan, Syria, Iraq, Sudan, and The Democratic Republic of the Congo.</p>
+            <p class="text-faded mb-4">Sanctuary Kitchen believes that food is a vital tool in creating valuable relationships among members of a community. Sharing carefully prepared meals creates a space for cultural learning between local residents and new arrivals. By showcasing the culinary talent of its chefs, Sanctuary Kitchen encourages community while also providing support, income, and entrepreneurial opportunities to these talented individuals. Created in 2017, it is a program of CitySeed—a local New Haven nonprofit dedicated to providing access to fresh food for all—and runs with the help of a network of community volunteers.</p>
+            <p class="text-faded mb-4">The documentary filmmaker hasn't completed this documentary, either, so this is a placeholder video until Friday.</p>
             <hr class="light my-4">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/v9mvIESAhWo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <!--<video style="width: 90%;" controls>-->
+            <!--Embeds a Youtube Video-->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jEcdEKuUcZA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            <!--<video style="width: 90%;" controls>-->
             <!--  <source src="img/sandras/INTERVIEW_draft.mp4" type="video/mp4">-->
             <!--    Your browser does not support the video tag.-->
             <!--</video>-->
@@ -100,11 +103,10 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Explore Fair Haven</h2>
+            <h2 class="section-heading">New to New Haven</h2>
             <hr class="my-4">
-            <p class="mb-2">Take a virtual walking tour of Fair Haven using Google Maps Street View.</p>
-            <p class="mb-2">Start at Cositas Deliciosas on Grand Ave., the main street of Fair Haven.</p>
-            <p class="mb-2">Click and drag the yellow icon to begin.</p>
+            <p class="mb-2">Take a virtual walking tour of New Haven using Google Maps Street View.</p>
+            <p class="mb-2">Start at CitySeed on Grand Ave; Click and drag the yellow icon to begin.</p>
             <hr class="light my-4">
           </div>
         </div>
@@ -114,106 +116,46 @@
       <div id="googleMap" style="width:100%;height:70vh;"></div>
         <script>
           function myMap() {
-              var cositas= {lat: 41.308899, lng: -72.897885};
+              var cityseed= {lat: 41.307987, lng: -72.916340};
               var mapProp= {
                   zoom: 15,
-                  center: new google.maps.LatLng(41.309013, -72.895490),
+                  center: new google.maps.LatLng(41.307946, -72.913711),
               };
               var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-              var marker = new google.maps.Marker({position: cositas, map: map})
+              var marker = new google.maps.Marker({position: cityseed, map: map})
           }
          </script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOzO0DVDH74YrX2WYy3xcW-MiAXn9VYQA&callback=myMap"></script>
     </section>
 
-
+    <!--Recipes and photos from Sanctuary Kitchen-->
     <section id="portfolio">
       <section class="bg-dark text-white">
         <div class="container text-center">
             <h2 class="mb-4">Check Out Recipes from Sanctuary Kitchen</h2>
-            <a class="btn btn-light btn-xl sr-button" href="img/recipes/cemitas.jpg">#1</a>
-            <a class="btn btn-light btn-xl sr-button" href="img/recipes/mangonada.jpg">#2</a>
+            <a class="btn btn-light btn-xl sr-button" href="img/recipes/sanctuary_1.jpg">Muhammara: Bulgur, Red Pepper & Walnut Spread</a>
+            <a class="btn btn-light btn-xl sr-button" href="img/recipes/sanctuary_2.jpg">Koussa Mahshi: Stuffed Zucchini</a>
         </div>
         <p></p>
         <div class="row no-gutters popup-gallery">
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/cositas/avocado_1.jpg">
-              <img class="img-fluid" src="img/cositas/avocado_1.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Cositas Deliciosas
-                  </div>
-                  <div class="project-name">
-                    A cool treat for a hot summer day
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/cositas/miguel.jpg">
-              <img class="img-fluid" src="img/cositas/miguel.jpg" alt="">
+            <a class="portfolio-box" href="img/sanctuary/cutting.jpg">
+              <img class="img-fluid" src="img/sanctuary/cutting.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
                     Sanctuary Kitchen
                   </div>
                   <div class="project-name">
-                    (something from the interview)
+                    (quote awaiting interview translation--the interview was conducted in Arabic)
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/cositas/griddle_2.jpg">
-              <img class="img-fluid" src="img/cositas/griddle_2.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Sandra's Next Generation
-                  </div>
-                  <div class="project-name">
-                    Perfectly crispy, every time.
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/cositas/spices.jpg">
-              <img class="img-fluid" src="img/cositas/spices.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Fair Haven
-                  </div>
-                  <div class="project-name">
-                    Mangonadas by Miguel
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/cositas/con_queso.jpg">
-              <img class="img-fluid" src="img/cositas/con_queso.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    The Hill
-                  </div>
-                  <div class="project-name">
-                    Pithy caption
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/cositas/no_straw.png" >
-              <img class="img-fluid" src="img/cositas/no_straw.png" alt="">
+            <a class="portfolio-box" href="img/sanctuary/yummy.jpg">
+              <img class="img-fluid" src="img/sanctuary/yummy.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -221,6 +163,66 @@
                   </div>
                   <div class="project-name">
                     Find the recipe in the digital cookbook
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/sanctuary/welcome.jpg">
+              <img class="img-fluid" src="img/sanctuary/welcome.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Sanctuary Kitchen
+                  </div>
+                  <div class="project-name">
+                    Refugees are welcome here
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/sanctuary/smile_1.jpg">
+              <img class="img-fluid" src="img/sanctuary/smile_1.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    CitySeed
+                  </div>
+                  <div class="project-name">
+                    (quote awaiting interview translation)
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/sanctuary/close.jpg">
+              <img class="img-fluid" src="img/sanctuary/close.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Sanctuary Kitchen
+                  </div>
+                  <div class="project-name">
+                    (quote awaiting interview translation)
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/sanctuary/smile_2.jpg" >
+              <img class="img-fluid" src="img/sanctuary/smile_2.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Sanctuary Kitchen
+                  </div>
+                  <div class="project-name">
+                    (quote awaiting interview translation)
                   </div>
                 </div>
               </div>
@@ -234,20 +236,19 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Contact Cositas Deliciosas</h2>
+            <h2 class="section-heading">Contact Sanctuary Kitchen</h2>
             <hr class="my-4">
-            <p class="mb-5">Pithy statement saying why Cositas is so cool</p>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-4 ml-auto text-center">
-            <i class="fas fa-phone fa-3x mb-3 sr-contact-1"></i>
-            <p>203-782-4757</p>
+            <i class="fas fa-envelope fa-3x mb-3 sr-contact-1"></i>
+            <p><a href="mailto:sanctuarykitchen@cityseed.org">sanctuarykitchen@cityseed.org</a></p>
           </div>
           <div class="col-lg-4 mr-auto text-center">
             <i class="fas fa-laptop fa-3x mb-3 sr-contact-2"></i>
             <p>
-              <a href="https://www.facebook.com/CositasDeliciosasNewHaven/">Website</a>
+              <a href="https://www.sanctuarykitchen.org/">Website</a>
             </p>
           </div>
         </div>
